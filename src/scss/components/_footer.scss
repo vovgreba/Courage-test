@@ -1,0 +1,127 @@
+.footer {
+  background-color: $color-darkBlue;
+  padding: 66px 0 30px;
+  &_container {
+    display: grid;
+
+    grid-template-columns: 312px 1fr 1fr 242px;
+    gap: 120px;
+  }
+  &_title {
+    font-family: $ArialBold;
+    font-size: 18px;
+    line-height: 1.333;
+    margin-bottom: 45px;
+
+  }
+  &_logo {
+    margin-bottom: 24px;
+    img {
+      max-width: 223px;
+      width: 100%;
+    }
+    hr {
+      margin-top: 28px;
+      width: 293px;
+      background-color: rgba(247, 248, 249, 0.2);
+      height: 1px;
+      border: none;
+    }
+  }
+  &_content {
+    font-size: 14px;
+    margin-bottom: 21px;
+    width: 100%;
+    hr {
+      margin-top: 28px;
+      width: 293px;
+      background-color: rgba(247, 248, 249, 0.2);
+      height: 1px;
+      border: none;
+    }
+  }
+  &_copyright {
+    img {
+      vertical-align: top;
+    }
+  }
+  &_items {
+    font-size: 14px;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .contact-info_geo {
+    white-space: nowrap;
+    img {
+      margin-right: 7px;
+      width: 9px;
+    }
+  }
+  .contact-info_geo, .contact-info_phone {
+    font-size: 14px;
+    line-height: 2.143;
+    color: rgba(243, 243, 243, 0.8);
+    margin-bottom: 20px;
+  }
+  &_contacts {
+    hr {
+      background-color: rgba(247, 248, 249, 0.2);
+      margin-bottom: 20px;
+      height: 1px;
+      border: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1140px) {
+  .footer_container {
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 976px) {
+  .footer_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 150px;
+  }
+
+  .footer_navigation {
+    h4 {
+      margin-top: 0;
+    }
+  }
+  .footer_logo hr, .footer_content hr {
+    width: 100%;
+  }
+  .footer .contact-info_phone {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(247, 248, 249, 0.2);
+  }
+  .footer_contacts {
+    max-width: 300px;
+    hr {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 670px) {
+  .footer_container {
+    gap: 20px 40px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer {
+    h4 {
+      margin-top: 0;
+    }
+  }
+  .footer_contacts {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,140 @@
+.tours {
+  padding: 73px 0;
+  .container {
+    font-size: 20px;
+    font-family: $ArialBold;
+    @include flex-container(row, flex-start);
+    gap: 32px;
+    margin-bottom: 74px;
+    color: #000;
+  }
+  .tours--burning {
+    color: $yellow;
+  }
+  &_inner {
+    position: relative;
+    max-width: 1775px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .swiper-wrapper {
+    @include flex-container(row, space-between);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    @include flex-container(row, space-between, center);
+    width: 100%;
+    height: 100%;
+  }
+  .mySwiper-tours {
+    max-width: 1690px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .swiper-button-next {
+    right: 3px;
+  }
+  .swiper-button-prev {
+    left: 3px;
+  }
+  &_card {
+    max-width: 519px;
+    width: 100%;
+    background-color: $color-light;
+    border-radius: 7px;
+    padding: 13px;
+    @include flex-container(row, space-between);
+    color: #000;
+    gap: 28px;
+  }
+  &_name {
+    font-size: 17px;
+    font-family: $ArialBold;
+    line-height: 1.765;
+  }
+  &_data, &_desc {
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgb(58, 58, 58);
+  }
+  &_desc {
+    margin-bottom: 32px;
+  }
+  hr {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(106, 106, 106);
+    border: none;
+    margin-top: 13px;
+    margin-bottom: 17px;
+    opacity: 0.102;
+  }
+  &_inner-wrapp {
+    @include flex-container(row, space-between, center);
+  }
+  &_price {
+    font-size: 20px;
+    sup {
+      position: relative;
+      font-size: 11px;
+      color: rgb(138, 138, 138);
+      display: inline-block;
+      top: -15px;
+    }
+  }
+  &_btn {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-color: $yellow;
+    border: none;
+  }
+}
+
+
+@media screen and (max-width: 645px) {
+  .tours .swiper-slide {
+    @include flex-container(column);
+    max-width: 500px;
+    width: 100%;
+    gap: 20px;
+  }
+  .tours_img {
+    width: 100%;
+    text-align: center;
+  }
+  .tours_inner {
+    padding: 0 30px;
+  }
+  .tours_content {
+    padding: 0 15px;
+  }
+  .tours_inner-wrapp {
+    padding: 0 10px;
+  }
+  .tours .swiper-wrapper {
+    @include flex-container(row, flex-start, center);
+  }
+}
+@media screen and (max-width: 600px) {
+  .tours .container {
+    @include flex-container(column, center, center);
+    gap: 20px;
+  }
+  .tours_title {
+    margin: 0;
+  }
+  .tours .swiper-slide {
+    // box-sizing: border-box;
+    max-width: 400px;
+  }
+}
+
+
+
+
