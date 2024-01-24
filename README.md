@@ -2,6 +2,7 @@
 
 > Используется сборка на Gulp 4 
 ## Вы можете посмотреть на GitHub Pages этот проект
+[Ссылка на главную страницу](https://vovgreba.github.io/Courage-test/app/index)
 
 ### Начало работы
 
